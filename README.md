@@ -36,14 +36,16 @@ Registeration Number : 212225240090
 
 ## MainActivity.java
 ```
-package com.example.lifecyclemethods;
+package com.example.text;
 
 import android.os.Bundle;
 import android.widget.Toast;
 
-
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -51,39 +53,31 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast t = Toast.makeText(getApplicationContext(), "onCreate Called", Toast.LENGTH_LONG);
-        t.show();
+        Toast.makeText(getApplicationContext(),"onCreate Called", Toast.LENGTH_LONG).show();
     }
     protected void onStart(){
         super.onStart();
-        Toast t  = Toast.makeText(getApplicationContext(), "onStart Called", Toast.LENGTH_LONG);
-        t.show();
-    }
-    @Override
-    protected void onPause(){
-        super.onPause();
-        Toast t = Toast.makeText(getApplicationContext(), "onPause Called", Toast.LENGTH_LONG);
-        t.show();
-    }
-    protected void onResume(){
-        super.onResume();
-        Toast t = Toast.makeText(getApplicationContext(), "onResume Called", Toast.LENGTH_LONG);
-        t.show();
-    }
-    protected void onStop(){
-        super.onStop();
-        Toast t = Toast.makeText(getApplicationContext(), "onStop Called", Toast.LENGTH_LONG);
-        t.show();
+        Toast.makeText(getApplicationContext(),"onStart Called", Toast.LENGTH_LONG).show();
     }
     protected void onRestart(){
         super.onRestart();
-        Toast t = Toast.makeText(getApplicationContext(), "onRestart Called", Toast.LENGTH_LONG);
-        t.show();
+        Toast.makeText(getApplicationContext(),"onRestart Called", Toast.LENGTH_LONG).show();
+    }
+    protected void onPause(){
+        super.onPause();
+        Toast.makeText(getApplicationContext(),"onPause Called", Toast.LENGTH_LONG).show();
+    }
+    protected void onResume(){
+        super.onResume();
+        Toast.makeText(getApplicationContext(),"onResume Called", Toast.LENGTH_LONG).show();
+    }
+    protected void onStop(){
+        super.onStop();
+        Toast.makeText(getApplicationContext(),"onStop Called", Toast.LENGTH_LONG).show();
     }
     protected void onDestroy(){
         super.onDestroy();
-        Toast t = Toast.makeText(getApplicationContext(), "onDestroy Called", Toast.LENGTH_LONG);
-        t.show();
+        Toast.makeText(getApplicationContext(),"onDestroy", Toast.LENGTH_LONG).show();
     }
 }
 ```
@@ -103,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to Android Studio"
+        android:text="Welcome to Android studio"
         android:textSize="18sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -114,12 +108,15 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 ## OUTPUT
+<img width="1919" height="1020" alt="Screenshot 2026-10-30 082913" src="https://github.com/user-attachments/assets/f0df31d6-523e-488d-89db-b8a759c9019e" />
 
-<img width="1911" height="1022" alt="image" src="https://github.com/user-attachments/assets/59239625-df76-46a1-b967-5cad3452fd66" />
-<img width="1917" height="1017" alt="image" src="https://github.com/user-attachments/assets/842c29e3-6dfa-45a4-baaf-acc16712f09f" />
-<img width="1915" height="1027" alt="image" src="https://github.com/user-attachments/assets/d3423ca6-7087-491f-a609-508f841d92e1" />
-<img width="1911" height="1010" alt="image" src="https://github.com/user-attachments/assets/135c5ad7-954f-4c02-ab30-f31cae6d062c" />
-<img width="1918" height="1015" alt="image" src="https://github.com/user-attachments/assets/e38ca814-d8a4-4315-9483-9727e85f04a1" />
+<img width="1919" height="1021" alt="Screenshot 2026-10-30 082950" src="https://github.com/user-attachments/assets/09a12367-3b96-46f6-bfc1-2908a399c03d" />
+
+<img width="1918" height="1020" alt="Screenshot 2026-10-30 083037" src="https://github.com/user-attachments/assets/892c5725-161c-4039-859e-1a9a3a0fd072" />
+
+<img width="1919" height="1024" alt="Screenshot 2026-10-30 083154" src="https://github.com/user-attachments/assets/014cd33f-c52f-4157-af12-f38fa238a0cd" />
+
+<img width="1919" height="1022" alt="Screenshot 2026-10-30 083104" src="https://github.com/user-attachments/assets/1e602dde-f947-454d-91d7-3c4dd50ca52b" />
 
 
 
