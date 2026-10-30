@@ -32,8 +32,11 @@ Program to print the text “Welcome to Android studio”.
 Developed by: LEENA SHREE M
 Registeration Number : 212225220056
 
+```
 
-package com.example.test;
+## MainActivity.java
+```
+package com.example.text;
 
 import android.os.Bundle;
 import android.widget.Toast;
@@ -50,43 +53,31 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast.makeText(getApplicationContext(), "onCentre Called", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),"onCreate Called", Toast.LENGTH_LONG).show();
     }
-
-    @Override
-    protected void onStart() {
+    protected void onStart(){
         super.onStart();
-        Toast.makeText(getApplicationContext(), "onStart Called", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),"onStart Called", Toast.LENGTH_LONG).show();
     }
-
-    @Override
-    protected void onRestart() {
+    protected void onRestart(){
         super.onRestart();
-        Toast.makeText(getApplicationContext(), "onRestart called", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),"onRestart Called", Toast.LENGTH_LONG).show();
     }
-
-    @Override
-    protected void onPause() {
+    protected void onPause(){
         super.onPause();
-        Toast.makeText(getApplicationContext(), "onPause called", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),"onPause Called", Toast.LENGTH_LONG).show();
     }
-
-    @Override
-    protected void onResume() {
+    protected void onResume(){
         super.onResume();
-        Toast.makeText(getApplicationContext(), "onResume called", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),"onResume Called", Toast.LENGTH_LONG).show();
     }
-
-    @Override
-    protected void onStop() {
+    protected void onStop(){
         super.onStop();
-        Toast.makeText(getApplicationContext(), "onStop called", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),"onStop Called", Toast.LENGTH_LONG).show();
     }
-
-    @Override
-    protected void onDestroy() {
+    protected void onDestroy(){
         super.onDestroy();
-        Toast.makeText(getApplicationContext(), "onDestroy called", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),"onDestroy", Toast.LENGTH_LONG).show();
     }
 }
 ```
